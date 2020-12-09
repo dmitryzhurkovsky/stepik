@@ -14,30 +14,26 @@ def count_time(func_in):
     return wrapper
 
 
-
-
 # @count_time
 def create_list_for(n):
-    list = []
+    data = []
     for i in range(n ** 4):
-        list.append(i)
+        data.append(i)
 
-    return list
+    return data
 
 
 # @count_time
 def create_list_comprehension(n):
-    list = [i for i in range(n ** 4)]
+    data = [i for i in range(n ** 4)]
 
-    return list
+    return data
 
 
 n = 10
 
 # create_list_for(10)
 # create_list_comprehension(10)
-
-########################################################################################################################
 
 
 def lower_text(func_in):
@@ -69,7 +65,7 @@ x = "Michel"
 
 # print_word(x)
 
-########################################################################################################################
+
 
 
 def counter_calls(func_in):
@@ -93,7 +89,7 @@ def print_word2(x):
 # print_word2('asa')
 # print_word2('terra')
 
-########################################################################################################################
+
 
 
 def counter():
