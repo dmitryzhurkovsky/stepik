@@ -17,10 +17,10 @@ class RandomIterator:
             raise StopIteration
 
 
-x = RandomIterator(4)
+def random_generator(k):
+    for i in range(k):
+        yield random()
 
-iter(x)
+gen = random_generator(3)
 
-for x in RandomIterator(10):
-    print(x)
-
+print(type(gen))
